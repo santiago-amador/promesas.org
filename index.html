@@ -4,39 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leeyescribe.org</title>
+    <title>promesas.org - Alfabetización y atención a niños con rezago académico grave</title>
+    <meta name="description" content="Escribiendo promesas para combatir el analfabetismo">
     <link rel="stylesheet" href="./styles.css">
 </head> 
 <body>
     <header>
-        <img id="logo" src="./logo.png" alt="promesas logo" width="200px" height="40px">
-        
+        <img id="logo" src="./img/logo.png" alt="promesas logo" width="200px" height="40px">  
         <nav class="topnav">
             <ul class="nav-links">
-                <li><a href="el-objetivo.html" href="#">El Objetivo</a></li>&nbsp;&nbsp;&nbsp;
-                <li><a href="#" href="las_promesas.html">Las Promesas</a></li>&nbsp;&nbsp;&nbsp;
-                <li><a chref="" href="">Contáctanos</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="#el_objetivo" href="#">Propósito</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="#promesasAd">Las Promesas</a></li>&nbsp;&nbsp;&nbsp;
+                <li><a href="#contact" href="">Contacto</a></li>&nbsp;&nbsp;&nbsp;
             </ul> 
-        </nav>
-           
+        </nav>        
         <!--Buscar un mejor copy para el call to action-->
-         <button class="cta-btn" href="#">Adopta una promesa</button>  
-
+        <button id="cta-btn" href="#">Apoya en fernando@promesas.org</button>  
     </header>
 
-<div class="banner-img"><h1 id="headline_copy">Hay 25 niños que no saben leer ni escribir.
-    <br>Sólo al salir de casa
-</h1></div>
-
-    
-        
-<section class="fact-section">
-
-
-
+    <section class="banner-img">
+    <h1 id="headline_copy">Hay 25 niños que no saben leer ni escribir.<br>Sólo al salir de tu casa.</h1>
     </section>
-    
-</section>
 
-</body>
+    <br> <br> <br>
+
+    <section class="fact-section">
+        
+        <div class="fact-cards" id="f1">
+            <div class="card-content">
+                <h3>Combate al rezago académico</h3>
+                <hr><br>
+                <img src="./img/discapacidad-mental.png" alt="learning-difficulty-visual" class="home-icons" height="100px" width="100px"><br>
+                <p class="card-text">Atendemos a niños con rezago académico de +3 años que no saben leer, escribir o nunca han ido a la escuela </p>
+            </div>
+        </div>
+
+        <div class="fact-cards" id="f1">
+            <div class="card-content">
+                <h3>Más de 45 niños atendidos</h3>
+                <hr><br>
+                <img src="./img/estudiando.png" alt="learning-difficulty-visual" class="home-icons" height="100px" width="100px"><br>
+                <p class="card-text">El 80% de nuestros niños ya han aprendido a leer, escribir y realizar operaciones matemáticas básicas</p>
+            </div>            
+        </div>
+
+        <div class="fact-cards" id="f1">
+            <div class="card-content">
+                <h3>Alfabetización y regularización</h3>
+                <hr><br>
+                <img src="./img/trend.png" alt="learning-difficulty-visual" class="home-icons" height="100px" width="100px"><br>                    <p class="card-text">Nuestro siguente paso es regularizar a nuestras <i>promesas</i> y equiparlos con competencias para el mundo real</p>
+            </div>
+        </div>
+    
+    </section> <br> <br>
+
+    <section>
+        <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    </section>
+
+    <section id="el_objetivo">
+        <h2 class="title2">Cambia la vida de un niño...</h2>
+        <div class="text-container">
+            <p>La pandemia, el abandono escolar y los problemas familiares alejaron a miles de niños de la escuela.</p>
+            <p>Niños que el cartel cobija con dinero "facil", que ellos aceptan debido a la necesidad.</p> 
+            <p><strong>promesas.org</strong> es nuestra propuesta para solucionar la desintegración familiar, la inseguridad y por supuesto... el analfabetismo.</p> 
+        </div> 
+    </section><br>
+
+<!-- <video id="promesasAd" controls poster="#">
+    <source src="Qué es promesas.org.mp4" type="video/mp4">
+</video> -->
+
+    <!-- <section id="contact">     
+        <form id="contact-form" action="#">
+            <h3>Contáctanos</h3>
+            <label for="name-contactForm">
+                <span>Nombre:</span>
+                <input type="text" id="name-contactForm" name="name-contactForm" placeholder="Steve Jobs" required autocomplete="name">
+            </label>
+            <label for="email">
+                <span>E-mail:</span>
+                <input type="email" id="email" name="email" placeholder="jobs@thinkdifferent.com" required autocomplete="email">
+            </label>
+            <label for="contactForm-mailMessage">
+                <textarea name="contactForm-mailMessage" id="contactForm-mailMessage" cols="30" rows="10" placeholder="Tu mensaje..." required></textarea>
+            </label>
+            <input type="submit" name="footerContactForm_submitButton" id="footerContactForm_submitButton">
+        </form>
+    </section> -->
+</body> <br><br>
+<footer>
+    <br>
+    <div class="footer-elements">
+        <div>[leeyescribepromesas@gmail.com]</div>
+        <div>[Reynosa, Tamps. MX]</div>
+        <div>[+52 899 101 3817]</div>
+    </div>
+    <br> 
+</footer>
 </html>
